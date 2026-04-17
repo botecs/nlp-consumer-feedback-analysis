@@ -218,4 +218,23 @@ data/
 *.pkl
 *.joblib
 
+# High resolution images
 output/
+
+# Latex
+documents/*.aux
+documents/*.log
+documents/*.toc
+documents/*.out
+documents/*.lof
+documents/*.lot
+documents/*.pdf
+documents/*.bbl
+documents/*.blg
+documents/*.bcf
+documents/*.run.xml
+documents/*.synctex.gz
+documents/*.fdb_latexmk
+documents/*.fls
+documents/_minted*
+documents/pythontex-files-*/

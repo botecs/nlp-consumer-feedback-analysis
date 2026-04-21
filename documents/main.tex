@@ -1,19 +1,38 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass[12pt, a4paper, oneside]{report}
 
-% Magyar nyelv támogatása
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[magyar]{babel}
-
-\title{Fogyasztói visszajelzések NLP alapú elemzése}
-\author{Demjan Botond}
-\date{\today}
+% 1. Stílusfájl betöltése
+\usepackage{styles/main}
 
 \begin{document}
 
-\maketitle
+% 2. Borító és adminisztráció (számozás nélkül)
+\pagenumbering{gobble}
+\include{cover/cover_page}
+\include{cover/task_description}
 
-\section{Bevezetés}
-Ez a szakdolgozat a vásárlói vélemények automatizált feldolgozását mutatja be.
+% 3. Tartalomjegyzék 
+\cleardoublepage
+\tableofcontents
+
+% 4. Tartalom (arab számozással, 1-es oldaltól)
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% Fejezetek hívása
+\pagestyle{fancy}
+\include{chapters/1_introduction}
+
+%\clearpage
+
+% 5. Irodalomjegyzék
+%\addcontentsline{toc}{chapter}{Irodalomjegyzék}
+%\bibliographystyle{plain}
+%\bibliography{main.bib}
+
+%\newpage
+
+% 6. Mellékletek (későbbiekben)
+%\include{cover/user_guide}
 
 \end{document}

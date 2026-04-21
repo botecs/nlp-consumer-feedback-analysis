@@ -49,7 +49,7 @@ coverage.xml
 *.py.cover
 .hypothesis/
 .pytest_cache/
-cover/
+
 
 # Translations
 *.mo
@@ -210,7 +210,7 @@ __marimo__/
 # Local data files
 data/
 *.csv
-*.json
+#*.json (config files may be needed)
 *.zip
 *.parquet
 
@@ -222,19 +222,21 @@ data/
 output/
 
 # Latex
-documents/*.aux
-documents/*.log
-documents/*.toc
-documents/*.out
-documents/*.lof
-documents/*.lot
-documents/*.pdf
-documents/*.bbl
-documents/*.blg
-documents/*.bcf
-documents/*.run.xml
-documents/*.synctex.gz
-documents/*.fdb_latexmk
-documents/*.fls
-documents/_minted*
-documents/pythontex-files-*/
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.thm
+*.pdf
+
+# Obsidian
+.obsidian/

@@ -25,10 +25,10 @@ A dolgozat célja, hogy publikusan elérhető adatbázisok esetében automatizá
 uv sync
 ````
 
-* **2.  NLP modellek és erőforrások letöltése:**
+* **2.  NLTK erőforrások:**
 
 ````
-uv run scripts/setup_project.py
+uv run main.py
 ````
 
 
